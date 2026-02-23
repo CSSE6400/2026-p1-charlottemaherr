@@ -54,7 +54,7 @@ def update_todo(id):
         "updated_at": "2026-02-20T14:00:00" 
     })
 
-@api.route('/todos/<int:id:L', methods=['DELETE'])
+@api.route('/todos/<int:id>', methods=['DELETE'])
 def delete_tod(id):
     return jsonify({
         "id": id,
